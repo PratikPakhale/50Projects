@@ -18,7 +18,7 @@ body{
   padding: 50px;
   transition: transform 0.4s linear;
   transform-origin: top left;
-  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .show-nav{
