@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', 'sans-serif';
+  margin: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #333;
+}
+
+.container{
+  background-color: #f1f1f1;
+  padding: 50px;
+  transition: transform 0.4s linear;
+  transform-origin: top left;
+  min-height: 100vh;
+}
+
+.show-nav{
+  transform: rotate(-20deg);
+}
+
+.show-nav .circle-container{
+  transform: rotate(-75deg)
+}
+
+.circle-container{
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  transition: transform 0.4s linear;
+}
+
+.circle{
+  background-color: #ff7979;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle button#open{
+  cursor: pointer;
+  color: white;
+  border: none;
+  background: transparent;
+  position: absolute;
+  left: 60%;
+  bottom: 20%;
+}
+
+.circle button#close{
+  cursor: pointer;
+  color: white;
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 60%;
+  bottom: 20%;
+  transform: rotate(90deg);
+}
+
+.circle button span{
+  font-size: 35px;
+}
+
+.content{
+  margin: 40px;
+}
+
+.content img{
+  max-width: 100%;
+}
+
+nav{
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  transition: transform 0.4s ease-in;
+  transform: translateX(-100%);
+}
+
+nav ul li{
+  display: flex;
+  align-items: center;
+  color: white;
+}
+nav ul li + li{
+  margin-left: 10px;
+}
+nav ul li + li + li{
+  margin-left: 20px;
+}
+nav ul li span{
+  padding: 5px;
+}
+
+.circle button:focus {
+  outline: none;
+}
+
+nav li{
+  color: #fafafa;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+nav li:hover {
+  color: #FF7979;
+  font-weight: bold;
+
+}
