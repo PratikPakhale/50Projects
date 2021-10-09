@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+ 
+body{
+  font-family: 'Ubuntu', 'sans-serif';
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+section{
+  position: absolute;
+  background: url('https://iso.500px.com/wp-content/uploads/2014/07/big-one.jpg');
+  background-repeat: no-repeat;
+  height: calc(100vh + 40px);
+  width: calc(100vw + 40px);
+  filter: blur(10px);
+  z-index: -1
+}
+
+.loading-text{
+  color: white;
+  font-size: 30px;
+}
